@@ -1,7 +1,7 @@
 'use strict'
 const path = require('path');
 const webpack = require('webpack');
-const validate = require('webpack-validator') // validações de erro no webpack npm install --save-dev webpack-validator  TODO
+const validate = require('webpack-validator') // validações de erro no webpack npm install --save-dev webpack-validator
 
 module.exports = validate({
     devtool: 'source-map', // debugar browser  arquivo.js
@@ -20,7 +20,7 @@ module.exports = validate({
         new webpack.HotModuleReplacementPlugin() // para funcionar o hot loader
     ],
     module: {
-        preLoaders: [{ // pra configurar espaços ; e etc npm install --save-dev standard standard-loader@4 TODO
+        preLoaders: [{ // pra configurar espaços ; e etc npm install --save-dev standard standard-loader@4
             test: /\.js$/,
             exclude: /node_modules/,
             include: /src/,
